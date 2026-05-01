@@ -124,15 +124,6 @@
   measurementId: "G-M9JEJCHVGT"
 };
     firebase.initializeApp(firebaseConfig);
-    // Esto crea una sesión automática e invisible para el usuario
-firebase.auth().signInAnonymously()
-  .then(() => {
-    console.log("Acceso concedido de forma segura");
-    // Aquí puedes llamar a tus funciones de carga de datos si fuera necesario
-  })
-  .catch((error) => {
-    console.error("Error de acceso:", error.message);
-  });
     const db = firebase.database();
 
     const INITIAL_ROSTER = ["01 BERGERUD Torbjorn", "03 DASZEK Michal", "06 SZOSTAK Krystian", "08 JANC Mitja", "09 SZYSZKO Jakub", "11 SROCZYK Marcel", "16 BORUCKI Wojciech", "17 SERDIO Abel", "19 SUSNJA Leon", "21 SAMOILA Kiryl", "22 RICHARDSON Melvyn", "23 ZARABEC Miha", "24 FAZEKAS Gergo", "26 KRAJEWSKI Przemyslaw", "30 TERZIC Mirsad", "32 ALILOVIC Mirko", "33 DAWYDZIK Dawid", "34 MIHIC Lovro", "43 ILIC Zoran", "49 SZITA Zoltan", "99 KOSOROTOV Sergei"];
